@@ -1,0 +1,10 @@
+# Development
+.vscode/
+.DS_Store
+
+# Distibution
+dist/
+
+# Node
+node_modules/ 
+npm-debug.log
