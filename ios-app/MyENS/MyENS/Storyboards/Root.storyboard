@@ -186,7 +186,7 @@
                                     <constraint firstItem="4ze-jj-SJS" firstAttribute="centerY" secondItem="bKi-8d-yAW" secondAttribute="centerY" id="uES-O3-WAr"/>
                                 </constraints>
                             </view>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9i3-rq-I9J">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9i3-rq-I9J" userLabel="Token Container View">
                                 <rect key="frame" x="0.0" y="224" width="375" height="394"/>
                                 <connections>
                                     <segue destination="Bvs-l5-HHl" kind="embed" id="iia-vx-TgR"/>
@@ -199,18 +199,31 @@
                                     <segment title="My Names"/>
                                 </segments>
                                 <color key="tintColor" red="0.0" green="0.69411764710000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="PXQ-ey-o8h" eventType="valueChanged" id="OlL-vs-d3J"/>
+                                </connections>
                             </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kyr-Y2-7xQ" userLabel="ENS Container View">
+                                <rect key="frame" x="0.0" y="224" width="375" height="394"/>
+                                <connections>
+                                    <segue destination="Mle-rO-GJv" kind="embed" id="BuY-Va-DVs"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9i3-rq-I9J" firstAttribute="top" secondItem="shO-TC-htt" secondAttribute="bottom" constant="7" id="03a-Lo-I3f"/>
                             <constraint firstItem="jUf-Z1-vRO" firstAttribute="top" secondItem="6bK-Cc-o2g" secondAttribute="top" id="6XP-5d-BV8"/>
                             <constraint firstItem="jUf-Z1-vRO" firstAttribute="leading" secondItem="CBO-hb-HoA" secondAttribute="leading" id="7SS-Zl-0Ny"/>
+                            <constraint firstItem="Kyr-Y2-7xQ" firstAttribute="leading" secondItem="6bK-Cc-o2g" secondAttribute="leading" id="C9P-t5-aON"/>
+                            <constraint firstItem="Kyr-Y2-7xQ" firstAttribute="bottom" secondItem="6bK-Cc-o2g" secondAttribute="bottom" id="H4O-Kv-hcX"/>
                             <constraint firstAttribute="trailing" secondItem="jUf-Z1-vRO" secondAttribute="trailing" id="RM8-eH-tEv"/>
                             <constraint firstItem="shO-TC-htt" firstAttribute="top" secondItem="jUf-Z1-vRO" secondAttribute="bottom" constant="8" symbolic="YES" id="UWG-rg-3Cr"/>
+                            <constraint firstItem="Kyr-Y2-7xQ" firstAttribute="trailing" secondItem="6bK-Cc-o2g" secondAttribute="trailing" id="VJk-aA-efA"/>
                             <constraint firstItem="shO-TC-htt" firstAttribute="trailing" secondItem="jUf-Z1-vRO" secondAttribute="trailing" id="W33-hK-udB"/>
                             <constraint firstItem="shO-TC-htt" firstAttribute="leading" secondItem="9i3-rq-I9J" secondAttribute="leading" id="bWO-0s-jnS"/>
                             <constraint firstItem="9i3-rq-I9J" firstAttribute="bottom" secondItem="6bK-Cc-o2g" secondAttribute="bottom" id="l4d-yY-jts"/>
+                            <constraint firstItem="Kyr-Y2-7xQ" firstAttribute="top" secondItem="shO-TC-htt" secondAttribute="bottom" constant="7" id="qav-Uf-hkl"/>
                             <constraint firstItem="shO-TC-htt" firstAttribute="leading" secondItem="jUf-Z1-vRO" secondAttribute="leading" id="sTG-Jm-2cO"/>
                             <constraint firstItem="shO-TC-htt" firstAttribute="trailing" secondItem="9i3-rq-I9J" secondAttribute="trailing" id="yL9-pZ-QJE"/>
                         </constraints>
@@ -222,6 +235,9 @@
                     <connections>
                         <outlet property="addressLabel" destination="4ze-jj-SJS" id="g7b-Xn-Fdl"/>
                         <outlet property="gravatarImageView" destination="CmC-bw-ivT" id="32Z-iY-yyN"/>
+                        <outlet property="nameContainerView" destination="Kyr-Y2-7xQ" id="urv-PA-Lyw"/>
+                        <outlet property="segmentedControl" destination="shO-TC-htt" id="nKU-me-dmh"/>
+                        <outlet property="tokenContainerView" destination="9i3-rq-I9J" id="BTF-Eb-u81"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0g9-Qe-rXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -286,7 +302,44 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEh-P7-79U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1528.8" y="-913.04347826086962"/>
+            <point key="canvasLocation" x="1538" y="-1242"/>
+        </scene>
+        <!--Name Table View Controller-->
+        <scene sceneID="5ZD-IM-hrx">
+            <objects>
+                <tableViewController id="Mle-rO-GJv" customClass="NameTableViewController" customModule="MyENS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bom-hf-bDa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="394"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NameCell" rowHeight="80" id="I03-MQ-QH2">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I03-MQ-QH2" id="eZQ-sQ-rOt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You do not own any ENS names yet." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ja-ON-TOz">
+                                            <rect key="frame" x="18" y="25" width="338" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Mle-rO-GJv" id="DWI-cc-lch"/>
+                            <outlet property="delegate" destination="Mle-rO-GJv" id="0BG-MA-WbQ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sfL-D0-O6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1536.8" y="-834.78260869565224"/>
         </scene>
     </scenes>
     <resources>

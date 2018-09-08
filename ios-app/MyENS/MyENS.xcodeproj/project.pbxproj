@@ -11,6 +11,7 @@
 		942FC06A134BB87FCBC25697 /* Pods_MyENSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37D85B14C0F8552B69A5EA3 /* Pods_MyENSUITests.framework */; };
 		A12106642144848600823A8C /* TokenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12106632144848600823A8C /* TokenTableViewController.swift */; };
 		A12106662144874600823A8C /* TokenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12106652144874600823A8C /* TokenCell.swift */; };
+		A14A38AD2144966600FCABC4 /* NameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A38AC2144966600FCABC4 /* NameTableViewController.swift */; };
 		A1A8BF8D21441BE900B29390 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF8C21441BE900B29390 /* UIColor+Extension.swift */; };
 		A1A8BF8F2144223200B29390 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF8E2144223200B29390 /* LoginViewController.swift */; };
 		A1A8BF912144336600B29390 /* BackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF902144336600B29390 /* BackupViewController.swift */; };
@@ -56,6 +57,7 @@
 		993C091E6EE64D42C183B941 /* Pods-MyENSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyENSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyENSTests/Pods-MyENSTests.release.xcconfig"; sourceTree = "<group>"; };
 		A12106632144848600823A8C /* TokenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenTableViewController.swift; sourceTree = "<group>"; };
 		A12106652144874600823A8C /* TokenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenCell.swift; sourceTree = "<group>"; };
+		A14A38AC2144966600FCABC4 /* NameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTableViewController.swift; sourceTree = "<group>"; };
 		A1A8BF8C21441BE900B29390 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A1A8BF8E2144223200B29390 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A1A8BF902144336600B29390 /* BackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				A1A8BF98214467BF00B29390 /* ENSViewController.swift */,
 				A1A8BF9A214467C600B29390 /* SettingsViewController.swift */,
 				A12106632144848600823A8C /* TokenTableViewController.swift */,
+				A14A38AC2144966600FCABC4 /* NameTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				A1F146DB21433D5E00953938 /* AppDelegate.swift in Sources */,
 				A1A8BF99214467BF00B29390 /* ENSViewController.swift in Sources */,
 				A1A8BF9D214468E400B29390 /* UIView+Extension.swift in Sources */,
+				A14A38AD2144966600FCABC4 /* NameTableViewController.swift in Sources */,
 				A1A8BF9B214467C700B29390 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

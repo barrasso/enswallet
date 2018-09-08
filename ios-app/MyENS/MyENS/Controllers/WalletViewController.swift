@@ -13,6 +13,9 @@ class WalletViewController: UIViewController {
     
     @IBOutlet weak var gravatarImageView: UIImageView!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var tokenContainerView: UIView!
+    @IBOutlet weak var nameContainerView: UIView!
     
     let addr = ETHManager.shared.getAddress()
 
@@ -22,12 +25,32 @@ class WalletViewController: UIViewController {
         super.viewDidLoad()
         downloadGravatar()
         addressLabel.text = addr
+        nameContainerView.isHidden = true
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - Button Actions 🅱️
+    
+    @IBAction func segmentedControlValueChanged(_ sender: Any) {
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            tokenContainerView.isHidden = false
+            nameContainerView.isHidden = true
+            break
+        case 1:
+            tokenContainerView.isHidden = true
+            nameContainerView.isHidden = false
+            break
+        default:
+            break
+        }
+    }
+    
     
     // MARK: - Helper Functions 🛠
     
