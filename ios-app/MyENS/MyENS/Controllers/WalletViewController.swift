@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 class WalletViewController: UIViewController {
     
@@ -37,17 +38,13 @@ class WalletViewController: UIViewController {
                 self.gravatarImageView.image = UIImage(data: data!)
             }
         }
-        gravatarImageView.image = UIImage()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func qrCodeTapped(_ sender: Any) {
+        // make qr code popup
     }
-    */
-
+    
+    @IBAction func copyAddressTapped(_ sender: Any) {
+        UIPasteboard.general.string = addr
+    }
 }

@@ -20,6 +20,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if ETHManager.shared.checkWallet() {
+            // go home
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
