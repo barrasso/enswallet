@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DF6C3FBD568CF39AC8E7D15 /* Pods_MyENSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673C110C1D118CF60F3BB755 /* Pods_MyENSTests.framework */; };
+		942FC06A134BB87FCBC25697 /* Pods_MyENSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37D85B14C0F8552B69A5EA3 /* Pods_MyENSUITests.framework */; };
 		A1F146DB21433D5E00953938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F146DA21433D5E00953938 /* AppDelegate.swift */; };
 		A1F146DD21433D5E00953938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F146DC21433D5E00953938 /* ViewController.swift */; };
 		A1F146E021433D5E00953938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F146DE21433D5E00953938 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		A1F146E521433D6000953938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F146E321433D6000953938 /* LaunchScreen.storyboard */; };
 		A1F146F021433D6000953938 /* MyENSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F146EF21433D6000953938 /* MyENSTests.swift */; };
 		A1F146FB21433D6000953938 /* MyENSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F146FA21433D6000953938 /* MyENSUITests.swift */; };
+		E5C895554F8430F0ADB3FFD3 /* Pods_MyENS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB05E8019E57C58F51AA864E /* Pods_MyENS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E1CC45EEB502A4AAF3F1CF5 /* Pods-MyENSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyENSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyENSUITests/Pods-MyENSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		673C110C1D118CF60F3BB755 /* Pods_MyENSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyENSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		993C091E6EE64D42C183B941 /* Pods-MyENSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyENSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyENSTests/Pods-MyENSTests.release.xcconfig"; sourceTree = "<group>"; };
 		A1F146D721433D5E00953938 /* MyENS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyENS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F146DA21433D5E00953938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F146DC21433D5E00953938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		A1F146F621433D6000953938 /* MyENSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyENSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F146FA21433D6000953938 /* MyENSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyENSUITests.swift; sourceTree = "<group>"; };
 		A1F146FC21433D6000953938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF5F6279DA9074020DBC5FC2 /* Pods-MyENS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyENS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyENS/Pods-MyENS.release.xcconfig"; sourceTree = "<group>"; };
+		CB05E8019E57C58F51AA864E /* Pods_MyENS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyENS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E185536F65D7509CB02B33F6 /* Pods-MyENSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyENSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyENSTests/Pods-MyENSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA4F47BA9B7BF80A359C4CC6 /* Pods-MyENS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyENS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyENS/Pods-MyENS.debug.xcconfig"; sourceTree = "<group>"; };
+		F37D85B14C0F8552B69A5EA3 /* Pods_MyENSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyENSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7218C4A526A0CFE49FBF8A5 /* Pods-MyENSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyENSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyENSUITests/Pods-MyENSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C895554F8430F0ADB3FFD3 /* Pods_MyENS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DF6C3FBD568CF39AC8E7D15 /* Pods_MyENSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,82 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942FC06A134BB87FCBC25697 /* Pods_MyENSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58CFAA49E67FE82AEB429371 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA4F47BA9B7BF80A359C4CC6 /* Pods-MyENS.debug.xcconfig */,
+				AF5F6279DA9074020DBC5FC2 /* Pods-MyENS.release.xcconfig */,
+				E185536F65D7509CB02B33F6 /* Pods-MyENSTests.debug.xcconfig */,
+				993C091E6EE64D42C183B941 /* Pods-MyENSTests.release.xcconfig */,
+				F7218C4A526A0CFE49FBF8A5 /* Pods-MyENSUITests.debug.xcconfig */,
+				3E1CC45EEB502A4AAF3F1CF5 /* Pods-MyENSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		771B135343C7F2DA5C773407 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB05E8019E57C58F51AA864E /* Pods_MyENS.framework */,
+				673C110C1D118CF60F3BB755 /* Pods_MyENSTests.framework */,
+				F37D85B14C0F8552B69A5EA3 /* Pods_MyENSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1A8BF862143E92600B29390 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1A8BF872143E92600B29390 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A1A8BF882143E92600B29390 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1A8BF892143E92600B29390 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1A8BF8A2143E92600B29390 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1F146DA21433D5E00953938 /* AppDelegate.swift */,
+				A1F146DC21433D5E00953938 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A1A8BF8B2143E94400B29390 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A1F146DE21433D5E00953938 /* Main.storyboard */,
+				A1F146E321433D6000953938 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		A1F146CE21433D5E00953938 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +165,8 @@
 				A1F146EE21433D6000953938 /* MyENSTests */,
 				A1F146F921433D6000953938 /* MyENSUITests */,
 				A1F146D821433D5E00953938 /* Products */,
+				58CFAA49E67FE82AEB429371 /* Pods */,
+				771B135343C7F2DA5C773407 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +183,13 @@
 		A1F146D921433D5E00953938 /* MyENS */ = {
 			isa = PBXGroup;
 			children = (
-				A1F146DA21433D5E00953938 /* AppDelegate.swift */,
-				A1F146DC21433D5E00953938 /* ViewController.swift */,
-				A1F146DE21433D5E00953938 /* Main.storyboard */,
+				A1A8BF8A2143E92600B29390 /* Controllers */,
+				A1A8BF872143E92600B29390 /* Extensions */,
+				A1A8BF862143E92600B29390 /* Models */,
+				A1A8BF882143E92600B29390 /* Resources */,
+				A1A8BF8B2143E94400B29390 /* Storyboards */,
+				A1A8BF892143E92600B29390 /* Views */,
 				A1F146E121433D6000953938 /* Assets.xcassets */,
-				A1F146E321433D6000953938 /* LaunchScreen.storyboard */,
 				A1F146E621433D6000953938 /* Info.plist */,
 			);
 			path = MyENS;
@@ -132,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1F146FF21433D6000953938 /* Build configuration list for PBXNativeTarget "MyENS" */;
 			buildPhases = (
+				BCF59877834D234D635AE3C5 /* [CP] Check Pods Manifest.lock */,
 				A1F146D321433D5E00953938 /* Sources */,
 				A1F146D421433D5E00953938 /* Frameworks */,
 				A1F146D521433D5E00953938 /* Resources */,
+				83DEA7F4022B8CBF51E9C298 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1F1470221433D6000953938 /* Build configuration list for PBXNativeTarget "MyENSTests" */;
 			buildPhases = (
+				3836D80B477D13FED388CF61 /* [CP] Check Pods Manifest.lock */,
 				A1F146E721433D6000953938 /* Sources */,
 				A1F146E821433D6000953938 /* Frameworks */,
 				A1F146E921433D6000953938 /* Resources */,
@@ -167,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1F1470521433D6000953938 /* Build configuration list for PBXNativeTarget "MyENSUITests" */;
 			buildPhases = (
+				E8B91F6056BCEDBA6C20D69C /* [CP] Check Pods Manifest.lock */,
 				A1F146F221433D6000953938 /* Sources */,
 				A1F146F321433D6000953938 /* Frameworks */,
 				A1F146F421433D6000953938 /* Resources */,
@@ -250,6 +342,95 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3836D80B477D13FED388CF61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyENSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83DEA7F4022B8CBF51E9C298 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyENS/Pods-MyENS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/scrypt/scrypt.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1_ios/secp256k1_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift/web3swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/scrypt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyENS/Pods-MyENS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCF59877834D234D635AE3C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyENS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8B91F6056BCEDBA6C20D69C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyENSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1F146D321433D5E00953938 /* Sources */ = {
@@ -428,6 +609,7 @@
 		};
 		A1F1470021433D6000953938 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4F47BA9B7BF80A359C4CC6 /* Pods-MyENS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +628,7 @@
 		};
 		A1F1470121433D6000953938 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF5F6279DA9074020DBC5FC2 /* Pods-MyENS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +647,7 @@
 		};
 		A1F1470321433D6000953938 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E185536F65D7509CB02B33F6 /* Pods-MyENSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +669,7 @@
 		};
 		A1F1470421433D6000953938 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 993C091E6EE64D42C183B941 /* Pods-MyENSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +691,7 @@
 		};
 		A1F1470621433D6000953938 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7218C4A526A0CFE49FBF8A5 /* Pods-MyENSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +712,7 @@
 		};
 		A1F1470721433D6000953938 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E1CC45EEB502A4AAF3F1CF5 /* Pods-MyENSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

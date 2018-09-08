@@ -1,0 +1,6 @@
+framework module Pods_MyENSTests {
+  umbrella header "Pods-MyENSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

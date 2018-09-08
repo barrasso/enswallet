@@ -1,0 +1,6 @@
+framework module Pods_MyENSUITests {
+  umbrella header "Pods-MyENSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
