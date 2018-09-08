@@ -16,15 +16,17 @@ class BackupViewController: UIViewController {
     @IBOutlet weak var verifyPhraseButton: UIButton!
     @IBOutlet weak var skipBackupButton: UIButton!
     
+    // MARK: - Lifecycle ♻️
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    // MARK: - Button Actions 🅱️
     
     @IBAction func verifyRecoveryTapped(_ sender: Any) {
         

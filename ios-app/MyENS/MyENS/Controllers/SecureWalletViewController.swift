@@ -14,6 +14,8 @@ class SecureWalletViewController: UIViewController {
     @IBOutlet weak var useFaceIDButton: UIButton!
     @IBOutlet weak var usePinCodeButton: UIButton!
     
+    // MARK: - Lifecycle ♻️
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -22,9 +24,13 @@ class SecureWalletViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    // MARK: - Button Actions 🅱️
+    
     @IBAction func useFaceIDtapped(_ sender: Any) {
         useFaceID()
     }
+    
+    // MARK: - Helper Functions 🛠
     
     func useFaceID() {
         guard #available(iOS 8.0, *) else {

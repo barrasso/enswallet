@@ -14,8 +14,15 @@
 		A1A8BF912144336600B29390 /* BackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF902144336600B29390 /* BackupViewController.swift */; };
 		A1A8BF932144384A00B29390 /* SecureWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF922144384A00B29390 /* SecureWalletViewController.swift */; };
 		A1A8BF9521443A1E00B29390 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A8BF9421443A1E00B29390 /* Root.storyboard */; };
+		A1A8BF97214467B400B29390 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF96214467B400B29390 /* WalletViewController.swift */; };
+		A1A8BF99214467BF00B29390 /* ENSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF98214467BF00B29390 /* ENSViewController.swift */; };
+		A1A8BF9B214467C700B29390 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF9A214467C600B29390 /* SettingsViewController.swift */; };
+		A1A8BF9D214468E400B29390 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF9C214468E400B29390 /* UIView+Extension.swift */; };
+		A1A8BF9F2144698000B29390 /* ETHManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF9E2144698000B29390 /* ETHManager.swift */; };
+		A1A8BFA12144698D00B29390 /* ENSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BFA02144698D00B29390 /* ENSManager.swift */; };
+		A1A8BFA3214469EA00B29390 /* registry.json in Resources */ = {isa = PBXBuildFile; fileRef = A1A8BFA2214469EA00B29390 /* registry.json */; };
+		A1A8BFA521446A7000B29390 /* resolver.json in Resources */ = {isa = PBXBuildFile; fileRef = A1A8BFA421446A7000B29390 /* resolver.json */; };
 		A1F146DB21433D5E00953938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F146DA21433D5E00953938 /* AppDelegate.swift */; };
-		A1F146DD21433D5E00953938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F146DC21433D5E00953938 /* ViewController.swift */; };
 		A1F146E021433D5E00953938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F146DE21433D5E00953938 /* Main.storyboard */; };
 		A1F146E221433D6000953938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F146E121433D6000953938 /* Assets.xcassets */; };
 		A1F146E521433D6000953938 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F146E321433D6000953938 /* LaunchScreen.storyboard */; };
@@ -50,9 +57,16 @@
 		A1A8BF902144336600B29390 /* BackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupViewController.swift; sourceTree = "<group>"; };
 		A1A8BF922144384A00B29390 /* SecureWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureWalletViewController.swift; sourceTree = "<group>"; };
 		A1A8BF9421443A1E00B29390 /* Root.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		A1A8BF96214467B400B29390 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		A1A8BF98214467BF00B29390 /* ENSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENSViewController.swift; sourceTree = "<group>"; };
+		A1A8BF9A214467C600B29390 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A1A8BF9C214468E400B29390 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A1A8BF9E2144698000B29390 /* ETHManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETHManager.swift; sourceTree = "<group>"; };
+		A1A8BFA02144698D00B29390 /* ENSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENSManager.swift; sourceTree = "<group>"; };
+		A1A8BFA2214469EA00B29390 /* registry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = registry.json; sourceTree = "<group>"; };
+		A1A8BFA421446A7000B29390 /* resolver.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resolver.json; sourceTree = "<group>"; };
 		A1F146D721433D5E00953938 /* MyENS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyENS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F146DA21433D5E00953938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1F146DC21433D5E00953938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1F146DF21433D5E00953938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1F146E121433D6000953938 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F146E421433D6000953938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -125,6 +139,8 @@
 		A1A8BF862143E92600B29390 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A1A8BF9E2144698000B29390 /* ETHManager.swift */,
+				A1A8BFA02144698D00B29390 /* ENSManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -133,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				A1A8BF8C21441BE900B29390 /* UIColor+Extension.swift */,
+				A1A8BF9C214468E400B29390 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -140,6 +157,8 @@
 		A1A8BF882143E92600B29390 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A1A8BFA2214469EA00B29390 /* registry.json */,
+				A1A8BFA421446A7000B29390 /* resolver.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -155,10 +174,12 @@
 			isa = PBXGroup;
 			children = (
 				A1F146DA21433D5E00953938 /* AppDelegate.swift */,
-				A1F146DC21433D5E00953938 /* ViewController.swift */,
 				A1A8BF8E2144223200B29390 /* LoginViewController.swift */,
 				A1A8BF902144336600B29390 /* BackupViewController.swift */,
 				A1A8BF922144384A00B29390 /* SecureWalletViewController.swift */,
+				A1A8BF96214467B400B29390 /* WalletViewController.swift */,
+				A1A8BF98214467BF00B29390 /* ENSViewController.swift */,
+				A1A8BF9A214467C600B29390 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -337,9 +358,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1F146E521433D6000953938 /* LaunchScreen.storyboard in Resources */,
+				A1A8BFA521446A7000B29390 /* resolver.json in Resources */,
 				A1F146E221433D6000953938 /* Assets.xcassets in Resources */,
 				A1A8BF9521443A1E00B29390 /* Root.storyboard in Resources */,
 				A1F146E021433D5E00953938 /* Main.storyboard in Resources */,
+				A1A8BFA3214469EA00B29390 /* registry.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,10 +478,15 @@
 			files = (
 				A1A8BF8F2144223200B29390 /* LoginViewController.swift in Sources */,
 				A1A8BF912144336600B29390 /* BackupViewController.swift in Sources */,
+				A1A8BF9F2144698000B29390 /* ETHManager.swift in Sources */,
+				A1A8BF97214467B400B29390 /* WalletViewController.swift in Sources */,
+				A1A8BFA12144698D00B29390 /* ENSManager.swift in Sources */,
 				A1A8BF932144384A00B29390 /* SecureWalletViewController.swift in Sources */,
 				A1A8BF8D21441BE900B29390 /* UIColor+Extension.swift in Sources */,
-				A1F146DD21433D5E00953938 /* ViewController.swift in Sources */,
 				A1F146DB21433D5E00953938 /* AppDelegate.swift in Sources */,
+				A1A8BF99214467BF00B29390 /* ENSViewController.swift in Sources */,
+				A1A8BF9D214468E400B29390 /* UIView+Extension.swift in Sources */,
+				A1A8BF9B214467C700B29390 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,6 +669,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ethsociety.MyENS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -660,6 +689,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ethsociety.MyENS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

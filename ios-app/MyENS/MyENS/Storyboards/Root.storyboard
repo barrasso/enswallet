@@ -29,11 +29,11 @@
             </objects>
             <point key="canvasLocation" x="-991" y="-280"/>
         </scene>
-        <!--Item-->
+        <!--ENS-->
         <scene sceneID="WOp-Lv-0dj">
             <objects>
                 <navigationController id="WIA-lc-x9Z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ov7-02-n9S"/>
+                    <tabBarItem key="tabBarItem" title="ENS" id="ov7-02-n9S"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zWk-0x-IBT">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -46,27 +46,29 @@
             </objects>
             <point key="canvasLocation" x="191" y="-280"/>
         </scene>
-        <!--View Controller-->
+        <!--ENS Registrar-->
         <scene sceneID="P3h-BU-UAd">
             <objects>
-                <viewController id="ojG-g1-GXT" sceneMemberID="viewController">
+                <viewController id="ojG-g1-GXT" customClass="ENSViewController" customModule="MyENS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uWv-WG-W54">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="k07-8L-eKX"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HFC-Tg-u05"/>
+                    <navigationItem key="navigationItem" title="ENS Registrar" id="HFC-Tg-u05">
+                        <barButtonItem key="backBarButtonItem" title=" " id="HFY-60-mrS"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yh6-9A-GGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1071" y="-280"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="X0S-XH-Ap6">
             <objects>
                 <navigationController id="j2i-Ki-9es" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="rla-c2-zex"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="rla-c2-zex"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tCk-1G-jZy">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -79,27 +81,29 @@
             </objects>
             <point key="canvasLocation" x="-167" y="496"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="Dq2-Rv-xPM">
             <objects>
-                <viewController id="drC-rl-eGq" sceneMemberID="viewController">
+                <viewController id="drC-rl-eGq" customClass="SettingsViewController" customModule="MyENS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QL4-qA-XEw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="AEG-9k-uOO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Bg5-oa-xjc"/>
+                    <navigationItem key="navigationItem" title="Settings" id="Bg5-oa-xjc">
+                        <barButtonItem key="backBarButtonItem" title=" " id="MdC-kR-sBH"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R9D-BS-cYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="762" y="495"/>
         </scene>
-        <!--Item-->
+        <!--Wallet-->
         <scene sceneID="WMb-w1-1DX">
             <objects>
                 <navigationController id="jCa-Kv-Esm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="23D-TD-5mA"/>
+                    <tabBarItem key="tabBarItem" title="Wallet" id="23D-TD-5mA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rzh-xt-OoJ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -112,21 +116,54 @@
             </objects>
             <point key="canvasLocation" x="-167" y="-1035"/>
         </scene>
-        <!--View Controller-->
+        <!--My Wallet-->
         <scene sceneID="zCA-0e-00b">
             <objects>
-                <viewController id="PXQ-ey-o8h" sceneMemberID="viewController">
+                <viewController id="PXQ-ey-o8h" customClass="WalletViewController" customModule="MyENS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CBO-hb-HoA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jUf-Z1-vRO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CmC-bw-ivT">
+                                        <rect key="frame" x="8" y="44" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqO-du-ICS">
+                                        <rect key="frame" x="70" y="44" width="118" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;addr&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ze-jj-SJS">
+                                        <rect key="frame" x="70" y="76" width="118" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6bK-Cc-o2g"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vw3-AC-ota"/>
+                    <navigationItem key="navigationItem" title="My Wallet" id="vw3-AC-ota">
+                        <barButtonItem key="backBarButtonItem" title=" " id="N3D-z0-ABp"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addressLabel" destination="4ze-jj-SJS" id="g7b-Xn-Fdl"/>
+                        <outlet property="gravatarImageView" destination="CmC-bw-ivT" id="32Z-iY-yyN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0g9-Qe-rXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="761" y="-1036"/>
+            <point key="canvasLocation" x="760.79999999999995" y="-1036.7316341829087"/>
         </scene>
     </scenes>
 </document>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import web3swift
 
 class LoginViewController: UIViewController {
 
@@ -14,20 +15,39 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var createWalletButton: UIButton!
     @IBOutlet weak var restoreWalletButton: UIButton!
     
+    // MARK: - Lifecycle ♻️
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    // MARK: - Button Actions 🅱️
+    
     @IBAction func createWalletTapped(_ sender: Any) {
         // setup new wallet and save keystore to device
+        initEthereumKeystore()
         
         // segue to onboarding process
         self.performSegue(withIdentifier: "createWallet", sender: nil)
+    }
+    
+    func initEthereumKeystore() {
+        let userDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        let keystoreManager = KeystoreManager.managerForPath(userDir + "/keystore")
+        var ks: EthereumKeystoreV3?
+        if (keystoreManager?.addresses?.count == 0) {
+            ks = try! EthereumKeystoreV3(password: UUID().uuidString)
+            let keydata = try! JSONEncoder().encode(ks!.keystoreParams)
+            FileManager.default.createFile(atPath: userDir + "/keystore"+"/key.json", contents: keydata, attributes: nil)
+        } else {
+            ks = keystoreManager?.walletForAddress((keystoreManager?.addresses![0])!) as? EthereumKeystoreV3
+        }
+        guard let sender = ks?.addresses?.first else {return}
+        print(sender)
     }
     
     /*
