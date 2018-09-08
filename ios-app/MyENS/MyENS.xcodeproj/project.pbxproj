@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		8DF6C3FBD568CF39AC8E7D15 /* Pods_MyENSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673C110C1D118CF60F3BB755 /* Pods_MyENSTests.framework */; };
 		942FC06A134BB87FCBC25697 /* Pods_MyENSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37D85B14C0F8552B69A5EA3 /* Pods_MyENSUITests.framework */; };
+		A1A8BF8D21441BE900B29390 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF8C21441BE900B29390 /* UIColor+Extension.swift */; };
+		A1A8BF8F2144223200B29390 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF8E2144223200B29390 /* LoginViewController.swift */; };
+		A1A8BF912144336600B29390 /* BackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF902144336600B29390 /* BackupViewController.swift */; };
+		A1A8BF932144384A00B29390 /* SecureWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BF922144384A00B29390 /* SecureWalletViewController.swift */; };
+		A1A8BF9521443A1E00B29390 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A8BF9421443A1E00B29390 /* Root.storyboard */; };
 		A1F146DB21433D5E00953938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F146DA21433D5E00953938 /* AppDelegate.swift */; };
 		A1F146DD21433D5E00953938 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F146DC21433D5E00953938 /* ViewController.swift */; };
 		A1F146E021433D5E00953938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F146DE21433D5E00953938 /* Main.storyboard */; };
@@ -40,6 +45,11 @@
 		3E1CC45EEB502A4AAF3F1CF5 /* Pods-MyENSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyENSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyENSUITests/Pods-MyENSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		673C110C1D118CF60F3BB755 /* Pods_MyENSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyENSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		993C091E6EE64D42C183B941 /* Pods-MyENSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyENSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyENSTests/Pods-MyENSTests.release.xcconfig"; sourceTree = "<group>"; };
+		A1A8BF8C21441BE900B29390 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A1A8BF8E2144223200B29390 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A1A8BF902144336600B29390 /* BackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupViewController.swift; sourceTree = "<group>"; };
+		A1A8BF922144384A00B29390 /* SecureWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureWalletViewController.swift; sourceTree = "<group>"; };
+		A1A8BF9421443A1E00B29390 /* Root.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
 		A1F146D721433D5E00953938 /* MyENS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyENS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F146DA21433D5E00953938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F146DC21433D5E00953938 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +132,7 @@
 		A1A8BF872143E92600B29390 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A1A8BF8C21441BE900B29390 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -145,6 +156,9 @@
 			children = (
 				A1F146DA21433D5E00953938 /* AppDelegate.swift */,
 				A1F146DC21433D5E00953938 /* ViewController.swift */,
+				A1A8BF8E2144223200B29390 /* LoginViewController.swift */,
+				A1A8BF902144336600B29390 /* BackupViewController.swift */,
+				A1A8BF922144384A00B29390 /* SecureWalletViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -153,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				A1F146DE21433D5E00953938 /* Main.storyboard */,
+				A1A8BF9421443A1E00B29390 /* Root.storyboard */,
 				A1F146E321433D6000953938 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -323,6 +338,7 @@
 			files = (
 				A1F146E521433D6000953938 /* LaunchScreen.storyboard in Resources */,
 				A1F146E221433D6000953938 /* Assets.xcassets in Resources */,
+				A1A8BF9521443A1E00B29390 /* Root.storyboard in Resources */,
 				A1F146E021433D5E00953938 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +453,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1A8BF8F2144223200B29390 /* LoginViewController.swift in Sources */,
+				A1A8BF912144336600B29390 /* BackupViewController.swift in Sources */,
+				A1A8BF932144384A00B29390 /* SecureWalletViewController.swift in Sources */,
+				A1A8BF8D21441BE900B29390 /* UIColor+Extension.swift in Sources */,
 				A1F146DD21433D5E00953938 /* ViewController.swift in Sources */,
 				A1F146DB21433D5E00953938 /* AppDelegate.swift in Sources */,
 			);

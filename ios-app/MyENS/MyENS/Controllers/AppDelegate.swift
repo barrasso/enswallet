@@ -16,6 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // hide status bar
+        UIApplication.shared.isStatusBarHidden = true
+        
+        /* global navigation bar appearance */
+        UINavigationBar.appearance().barTintColor = UIColor.colorFromHex(rgbValue: 0xFFFFFF)
+        UINavigationBar.appearance().tintColor = UIColor.colorFromHex(rgbValue: 0x00B16A)
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "Avenir-Heavy", size: 18)!,NSAttributedStringKey.foregroundColor: UIColor.colorFromHex(rgbValue: 0x333333)]
+        
+        /* global tab bar appearance */
+        UITabBar.appearance().tintColor = UIColor.colorFromHex(rgbValue: 0x00B16A)
+        UITabBar.appearance().barTintColor = UIColor.colorFromHex(rgbValue: 0xFFFFFF)
+        UITabBar.appearance().backgroundColor = UIColor.colorFromHex(rgbValue: 0xFFFFFF)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.colorFromHex(rgbValue: 0x333333)], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.colorFromHex(rgbValue: 0x555555)], for: .selected)
+        
         return true
     }
 
