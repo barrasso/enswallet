@@ -15,6 +15,11 @@ class ENSViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var availabilityLabel: UILabel!
     @IBOutlet weak var bidButton: UIButton!
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
+    @IBOutlet weak var bidContainerView: UIView!
+    @IBOutlet weak var auctionContainerView: UIView!
+    
     var error: String?
     
     // MARK: - Lifecycle ♻️
@@ -25,11 +30,30 @@ class ENSViewController: UIViewController, UISearchBarDelegate {
         availabilityLabel.isHidden = true
         bidButton.isUserInteractionEnabled = false
         bidButton.isHidden = true
+        auctionContainerView.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    // MARK: - Button Actions 🅱️
+    
+    @IBAction func segmentedControlValueChanged(_ sender: Any) {
+        switch segmentedControl.selectedSegmentIndex {
+        case 0:
+            bidContainerView.isHidden = false
+            auctionContainerView.isHidden = true
+            break
+        case 1:
+            bidContainerView.isHidden = true
+            auctionContainerView.isHidden = false
+            break
+        default:
+            break
+        }
+    }
+    
     
     // MARK: - Helper Functions 🛠
     

@@ -25,7 +25,6 @@ class WalletViewController: UIViewController {
         downloadGravatar()
         addressLabel.text = addr
         nameContainerView.isHidden = true
-
     }
 
     override func didReceiveMemoryWarning() {
