@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FontAwesome_swift
 
 class WalletViewController: UIViewController {
     

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8DF6C3FBD568CF39AC8E7D15 /* Pods_MyENSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673C110C1D118CF60F3BB755 /* Pods_MyENSTests.framework */; };
 		942FC06A134BB87FCBC25697 /* Pods_MyENSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F37D85B14C0F8552B69A5EA3 /* Pods_MyENSUITests.framework */; };
+		A10294752145094F00746B4D /* BidTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10294742145094F00746B4D /* BidTableViewController.swift */; };
+		A10294772145095800746B4D /* AuctionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10294762145095800746B4D /* AuctionTableViewController.swift */; };
 		A12106642144848600823A8C /* TokenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12106632144848600823A8C /* TokenTableViewController.swift */; };
 		A12106662144874600823A8C /* TokenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12106652144874600823A8C /* TokenCell.swift */; };
 		A14A38AD2144966600FCABC4 /* NameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14A38AC2144966600FCABC4 /* NameTableViewController.swift */; };
@@ -25,6 +27,8 @@
 		A1A8BFA12144698D00B29390 /* ENSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8BFA02144698D00B29390 /* ENSManager.swift */; };
 		A1A8BFA3214469EA00B29390 /* registry.json in Resources */ = {isa = PBXBuildFile; fileRef = A1A8BFA2214469EA00B29390 /* registry.json */; };
 		A1A8BFA521446A7000B29390 /* resolver.json in Resources */ = {isa = PBXBuildFile; fileRef = A1A8BFA421446A7000B29390 /* resolver.json */; };
+		A1AD21FE214505C200BB014F /* BidCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD21FD214505C200BB014F /* BidCell.swift */; };
+		A1AD2200214505CD00BB014F /* AuctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD21FF214505CD00BB014F /* AuctionCell.swift */; };
 		A1F146DB21433D5E00953938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F146DA21433D5E00953938 /* AppDelegate.swift */; };
 		A1F146E021433D5E00953938 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F146DE21433D5E00953938 /* Main.storyboard */; };
 		A1F146E221433D6000953938 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F146E121433D6000953938 /* Assets.xcassets */; };
@@ -55,6 +59,8 @@
 		3E1CC45EEB502A4AAF3F1CF5 /* Pods-MyENSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyENSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyENSUITests/Pods-MyENSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		673C110C1D118CF60F3BB755 /* Pods_MyENSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyENSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		993C091E6EE64D42C183B941 /* Pods-MyENSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyENSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyENSTests/Pods-MyENSTests.release.xcconfig"; sourceTree = "<group>"; };
+		A10294742145094F00746B4D /* BidTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidTableViewController.swift; sourceTree = "<group>"; };
+		A10294762145095800746B4D /* AuctionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionTableViewController.swift; sourceTree = "<group>"; };
 		A12106632144848600823A8C /* TokenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenTableViewController.swift; sourceTree = "<group>"; };
 		A12106652144874600823A8C /* TokenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenCell.swift; sourceTree = "<group>"; };
 		A14A38AC2144966600FCABC4 /* NameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTableViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +77,8 @@
 		A1A8BFA02144698D00B29390 /* ENSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENSManager.swift; sourceTree = "<group>"; };
 		A1A8BFA2214469EA00B29390 /* registry.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = registry.json; sourceTree = "<group>"; };
 		A1A8BFA421446A7000B29390 /* resolver.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = resolver.json; sourceTree = "<group>"; };
+		A1AD21FD214505C200BB014F /* BidCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidCell.swift; sourceTree = "<group>"; };
+		A1AD21FF214505CD00BB014F /* AuctionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionCell.swift; sourceTree = "<group>"; };
 		A1F146D721433D5E00953938 /* MyENS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyENS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F146DA21433D5E00953938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F146DF21433D5E00953938 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -172,7 +180,9 @@
 		A1A8BF892143E92600B29390 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A1AD21FD214505C200BB014F /* BidCell.swift */,
 				A12106652144874600823A8C /* TokenCell.swift */,
+				A1AD21FF214505CD00BB014F /* AuctionCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +199,8 @@
 				A1A8BF9A214467C600B29390 /* SettingsViewController.swift */,
 				A12106632144848600823A8C /* TokenTableViewController.swift */,
 				A14A38AC2144966600FCABC4 /* NameTableViewController.swift */,
+				A10294742145094F00746B4D /* BidTableViewController.swift */,
+				A10294762145095800746B4D /* AuctionTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -419,7 +431,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyENS/Pods-MyENS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
@@ -431,7 +442,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
@@ -489,10 +499,13 @@
 			files = (
 				A1A8BF8F2144223200B29390 /* LoginViewController.swift in Sources */,
 				A1A8BF912144336600B29390 /* BackupViewController.swift in Sources */,
+				A10294772145095800746B4D /* AuctionTableViewController.swift in Sources */,
 				A1A8BF9F2144698000B29390 /* ETHManager.swift in Sources */,
 				A1A8BF97214467B400B29390 /* WalletViewController.swift in Sources */,
+				A10294752145094F00746B4D /* BidTableViewController.swift in Sources */,
 				A1A8BFA12144698D00B29390 /* ENSManager.swift in Sources */,
 				A12106662144874600823A8C /* TokenCell.swift in Sources */,
+				A1AD21FE214505C200BB014F /* BidCell.swift in Sources */,
 				A12106642144848600823A8C /* TokenTableViewController.swift in Sources */,
 				A1A8BF932144384A00B29390 /* SecureWalletViewController.swift in Sources */,
 				A1A8BF8D21441BE900B29390 /* UIColor+Extension.swift in Sources */,
@@ -501,6 +514,7 @@
 				A1A8BF9D214468E400B29390 /* UIView+Extension.swift in Sources */,
 				A14A38AD2144966600FCABC4 /* NameTableViewController.swift in Sources */,
 				A1A8BF9B214467C700B29390 /* SettingsViewController.swift in Sources */,
+				A1AD2200214505CD00BB014F /* AuctionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

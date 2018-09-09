@@ -2,7 +2,6 @@ PODS:
   - BigInt (3.1.0):
     - SipHash (~> 1.2)
   - CryptoSwift (0.11.0)
-  - FontAwesome.swift (1.4.4)
   - PromiseKit (6.4.0):
     - PromiseKit/CorePromise (= 6.4.0)
     - PromiseKit/Foundation (= 6.4.0)
@@ -26,14 +25,12 @@ PODS:
     - secp256k1_ios (~> 0.1)
 
 DEPENDENCIES:
-  - FontAwesome.swift
-  - web3swift (~> 1.1.5)
+  - web3swift (~> 1.1.6)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - BigInt
     - CryptoSwift
-    - FontAwesome.swift
     - PromiseKit
     - Result
     - scrypt
@@ -44,7 +41,6 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
   CryptoSwift: ad5208dd2aae0a764ea4ce2c2d34bd067cae67f0
-  FontAwesome.swift: 17b93524b9f61136a8566344517b8556ed584e87
   PromiseKit: ae3616f45d7bb9bf4ff1e91abc9b7a8c48a340e0
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   scrypt: a828bd579086977f6db7f9798d1c6332ccaaed4e
@@ -52,6 +48,6 @@ SPEC CHECKSUMS:
   SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
   web3swift: 669f16455d2dffb7bab4b61f39b16f3633d37c7d
 
-PODFILE CHECKSUM: 7e2afe7ce66ecc16f609ea48b6361ba5e779cfd9
+PODFILE CHECKSUM: 4019e15a4f41326c644e23cb7e6954667f320eca
 
 COCOAPODS: 1.5.3

@@ -15,6 +15,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var createWalletButton: UIButton!
     @IBOutlet weak var restoreWalletButton: UIButton!
     
+    var timer: Timer = Timer()
+    let heroTextContent: [String] = ["No more long addresses.", "Send money to friends.", "Choose your wallet name.", "Your personal ENS wallet."]
+    
     // MARK: - Lifecycle ♻️
     
     override func viewDidLoad() {
@@ -22,9 +25,16 @@ class LoginViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        startHeroTextReel()
+
         if ETHManager.shared.checkWallet() {
             // go home
+            
         }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        timer.invalidate()
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,6 +49,20 @@ class LoginViewController: UIViewController {
         
         // segue to onboarding process
         self.performSegue(withIdentifier: "createWallet", sender: nil)
+    }
+    
+    // MARK: - Helper Functions 🛠
+
+    func startHeroTextReel() {
+        timer = Timer.scheduledTimer(withTimeInterval: 4.0, repeats: true, block: { (timer) in
+            UIView.animate(withDuration: 0.6, animations: {
+                self.heroText.alpha = 0
+            })
+            self.heroText.text = self.heroTextContent[Int(arc4random_uniform(4))]
+            UIView.animate(withDuration: 0.6, animations: {
+                self.heroText.alpha = 1
+            })
+        })
     }
     
     func initEthereumKeystore() {
@@ -56,14 +80,4 @@ class LoginViewController: UIViewController {
         print(sender)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

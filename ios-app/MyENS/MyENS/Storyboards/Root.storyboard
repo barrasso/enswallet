@@ -53,16 +53,162 @@
                     <view key="view" contentMode="scaleToFill" id="uWv-WG-W54">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for your .eth domain..." translatesAutoresizingMaskIntoConstraints="NO" id="22e-on-mTv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Glj-2V-vEm">
+                                <rect key="frame" x="0.0" y="120" width="375" height="117"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dM-cH-Ic6">
+                                        <rect key="frame" x="287" y="46" width="50" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.69411764710000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                        <state key="normal" title="Bid">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;availability&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM3-ev-6Qp">
+                                        <rect key="frame" x="35" y="42" width="155" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="v1p-Mj-L5b">
+                                <rect key="frame" x="0.0" y="245" width="375" height="29"/>
+                                <segments>
+                                    <segment title="My Bids"/>
+                                    <segment title="Open Auctions"/>
+                                </segments>
+                                <color key="tintColor" red="0.0" green="0.69411764710000001" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcZ-Im-ubH">
+                                <rect key="frame" x="0.0" y="281" width="375" height="337"/>
+                                <connections>
+                                    <segue destination="qEp-Zw-b0l" kind="embed" id="BKK-2E-e6J"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j38-NA-rAf">
+                                <rect key="frame" x="0.0" y="281" width="375" height="337"/>
+                                <connections>
+                                    <segue destination="dla-jl-wI6" kind="embed" id="yBq-pC-apI"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kcZ-Im-ubH" firstAttribute="leading" secondItem="j38-NA-rAf" secondAttribute="leading" id="3k7-Z8-6Ew"/>
+                            <constraint firstItem="v1p-Mj-L5b" firstAttribute="leading" secondItem="kcZ-Im-ubH" secondAttribute="leading" id="478-NE-Y4z"/>
+                            <constraint firstItem="22e-on-mTv" firstAttribute="top" secondItem="k07-8L-eKX" secondAttribute="top" id="4Km-4E-ad2"/>
+                            <constraint firstItem="Glj-2V-vEm" firstAttribute="leading" secondItem="v1p-Mj-L5b" secondAttribute="leading" id="9EI-TF-oKV"/>
+                            <constraint firstItem="22e-on-mTv" firstAttribute="trailing" secondItem="Glj-2V-vEm" secondAttribute="trailing" id="AmI-0W-fPL"/>
+                            <constraint firstItem="v1p-Mj-L5b" firstAttribute="top" secondItem="uWv-WG-W54" secondAttribute="top" constant="245" id="Ere-MB-p53"/>
+                            <constraint firstItem="Glj-2V-vEm" firstAttribute="top" secondItem="22e-on-mTv" secondAttribute="bottom" id="IOj-cN-FKm"/>
+                            <constraint firstItem="kcZ-Im-ubH" firstAttribute="bottom" secondItem="k07-8L-eKX" secondAttribute="bottom" id="It1-4b-P8U"/>
+                            <constraint firstItem="j38-NA-rAf" firstAttribute="trailing" secondItem="kcZ-Im-ubH" secondAttribute="trailing" id="V99-mM-iMg"/>
+                            <constraint firstAttribute="trailing" secondItem="22e-on-mTv" secondAttribute="trailing" id="Wfv-HE-uWc"/>
+                            <constraint firstItem="kcZ-Im-ubH" firstAttribute="top" secondItem="v1p-Mj-L5b" secondAttribute="bottom" constant="8" symbolic="YES" id="hzs-t7-P4Q"/>
+                            <constraint firstItem="j38-NA-rAf" firstAttribute="top" secondItem="kcZ-Im-ubH" secondAttribute="top" id="ji7-cr-Ud5"/>
+                            <constraint firstItem="22e-on-mTv" firstAttribute="leading" secondItem="Glj-2V-vEm" secondAttribute="leading" id="kMl-xN-UPC"/>
+                            <constraint firstItem="v1p-Mj-L5b" firstAttribute="top" secondItem="Glj-2V-vEm" secondAttribute="bottom" constant="8" symbolic="YES" id="lWY-OW-Mns"/>
+                            <constraint firstItem="v1p-Mj-L5b" firstAttribute="trailing" secondItem="kcZ-Im-ubH" secondAttribute="trailing" id="oS8-Z2-oOT"/>
+                            <constraint firstItem="22e-on-mTv" firstAttribute="leading" secondItem="uWv-WG-W54" secondAttribute="leading" id="s0C-ux-U0F"/>
+                            <constraint firstItem="Glj-2V-vEm" firstAttribute="trailing" secondItem="v1p-Mj-L5b" secondAttribute="trailing" id="wnz-bP-c0R"/>
+                            <constraint firstItem="kcZ-Im-ubH" firstAttribute="bottom" secondItem="j38-NA-rAf" secondAttribute="bottom" id="xOe-Sf-wN8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="k07-8L-eKX"/>
                     </view>
                     <navigationItem key="navigationItem" title="ENS Registrar" id="HFC-Tg-u05">
                         <barButtonItem key="backBarButtonItem" title=" " id="HFY-60-mrS"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="availabilityLabel" destination="gM3-ev-6Qp" id="HdH-jP-ARH"/>
+                        <outlet property="bidButton" destination="6dM-cH-Ic6" id="l4m-4C-bM8"/>
+                        <outlet property="searchBar" destination="22e-on-mTv" id="B1H-M5-wmM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yh6-9A-GGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071" y="-280"/>
+            <point key="canvasLocation" x="1069.5999999999999" y="-280.20989505247377"/>
+        </scene>
+        <!--Bid Table View Controller-->
+        <scene sceneID="Vco-q0-NYF">
+            <objects>
+                <tableViewController id="qEp-Zw-b0l" customClass="BidTableViewController" customModule="MyENS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ika-z3-25v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="337"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BidCell" rowHeight="80" id="Jtf-uB-ohi">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jtf-uB-ohi" id="Lk3-vS-9Y6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You do not have any bids yet." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZy-An-9qT">
+                                            <rect key="frame" x="18" y="24" width="338" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qEp-Zw-b0l" id="5PW-u0-w3f"/>
+                            <outlet property="delegate" destination="qEp-Zw-b0l" id="WSO-yO-TFD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9WB-Ub-RL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="-429"/>
+        </scene>
+        <!--Auction Table View Controller-->
+        <scene sceneID="w3j-68-vUy">
+            <objects>
+                <tableViewController id="dla-jl-wI6" customClass="AuctionTableViewController" customModule="MyENS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oeg-Oi-TJ2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="337"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AuctionCell" rowHeight="80" id="Icy-24-b9h">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Icy-24-b9h" id="lFQ-pw-1BH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading open auctions..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qG-lM-JvA">
+                                            <rect key="frame" x="18" y="24" width="338" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dla-jl-wI6" id="GCc-P6-pLp"/>
+                            <outlet property="delegate" destination="dla-jl-wI6" id="YWO-rQ-aLZ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kXh-gz-aXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="-52"/>
         </scene>
         <!--Settings-->
         <scene sceneID="X0S-XH-Ap6">
@@ -320,7 +466,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You do not own any ENS names yet." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ja-ON-TOz">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You do not own any ENS names yet." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ja-ON-TOz">
                                             <rect key="frame" x="18" y="25" width="338" height="31"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
