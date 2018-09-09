@@ -27,7 +27,7 @@ I got the idea to build this after I attempted to get my girlfriend to register 
 
 I realized that the current process is not very user friendly.  Not only does one have to be familiar with general web 3 concepts, but the exisiting applications do not make it easy to register and manage names all in one cohesive location.
 
-The main purpose of this application is to abstract all the technical jargon and make it easier for end users to interact with the ENS, similarly to a typical DNS provider like GoDaddy or NameCheap.
+The main purpose of this application is to abstract all the technical jargon and make it easier for end users to interact with the ENS, similar to a typical DNS provider like GoDaddy or NameCheap.
 
 ## What it does
 
