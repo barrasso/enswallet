@@ -52,6 +52,9 @@
                                     <segue destination="aOX-Iu-eK0" kind="show" id="B1i-0H-IKb"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myens-logo" translatesAutoresizingMaskIntoConstraints="NO" id="FMa-wD-TvT">
+                                <rect key="frame" x="67" y="112" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -60,9 +63,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DBp-ag-9fd" secondAttribute="bottom" constant="34" id="6Yw-iu-rrP"/>
                             <constraint firstItem="DBp-ag-9fd" firstAttribute="centerX" secondItem="IEl-ei-o5S" secondAttribute="centerX" id="DhK-Ar-NFv"/>
                             <constraint firstItem="xoe-GM-Ry7" firstAttribute="leading" secondItem="IEl-ei-o5S" secondAttribute="leading" id="GdA-Nj-Dc6"/>
+                            <constraint firstItem="FMa-wD-TvT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="INU-5C-nXJ"/>
+                            <constraint firstItem="FMa-wD-TvT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="RSN-hM-mnf"/>
                             <constraint firstItem="xoe-GM-Ry7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="184" id="WxQ-7B-J9e"/>
                             <constraint firstItem="DBp-ag-9fd" firstAttribute="top" secondItem="IEl-ei-o5S" secondAttribute="bottom" constant="22" id="aqp-M1-GSV"/>
                             <constraint firstItem="DBp-ag-9fd" firstAttribute="centerX" secondItem="xoe-GM-Ry7" secondAttribute="centerX" id="cVu-jk-8gy"/>
+                            <constraint firstItem="xoe-GM-Ry7" firstAttribute="top" secondItem="FMa-wD-TvT" secondAttribute="bottom" constant="8" symbolic="YES" id="pb6-Op-cJb"/>
+                            <constraint firstItem="FMa-wD-TvT" firstAttribute="centerX" secondItem="xoe-GM-Ry7" secondAttribute="centerX" id="rp4-DC-1mR"/>
                             <constraint firstItem="xoe-GM-Ry7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30.5" id="xj2-7I-3xy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -422,4 +429,7 @@
             <point key="canvasLocation" x="864.79999999999995" y="837.93103448275872"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="myens-logo" width="1024" height="1024"/>
+    </resources>
 </document>
