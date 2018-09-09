@@ -11,6 +11,10 @@ Requirements:
 - Xcode Version 9.4.1 (9F2000)
 - Cocoapods 1.5.3
 
+ENS Contracts (Ropsten):
+- https://ropsten.etherscan.io/address/0x112234455c3a32fd11230c42e7bccd4a84e02010#readContract
+- https://ropsten.etherscan.io/address/0xC68De5B43C3d980B0C110A77a5F78d3c4c4d63B4#readContract
+
 First, navigate to root directory of the the iOS project: `ios-app/MyENS/`.
 
 Using the terminal, install the dependencies by running: `pod install`.
