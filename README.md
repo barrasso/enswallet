@@ -24,7 +24,7 @@ Open the `MyENS.xcworkspace` using Xcode.
 
 ## Future work and features
 
-Some features that I'd like to include in the future:
+Some features to include in a future release:
 
 - Contact list: send ether directly to friends using their ENS names
 - Reminders for auctions: push notifications for bids and reveals
